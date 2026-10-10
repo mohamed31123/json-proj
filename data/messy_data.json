@@ -1,0 +1,36 @@
+{
+  "projectName": "",
+  "version": "two",
+  "active": "yes",
+  "owner": {
+    "email": "not-an-email",
+    "age": 25
+  },
+  "tags": ["java", 42, null, ["nested"]],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Task with wrong id type",
+      "done": "false",
+      "estimateHours": -5
+    },
+    {
+      "id": 2,
+      "done": true
+    },
+    {
+      "id": 2,
+      "title": null,
+      "done": false,
+      "estimateHours": "three"
+    },
+    "this should be an object",
+    {
+      "id": 4.5,
+      "title": "Extra unknown field",
+      "done": false,
+      "priority": "high"
+    }
+  ],
+  "extraField": "not in the schema"
+}

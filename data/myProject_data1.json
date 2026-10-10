@@ -1,0 +1,24 @@
+{
+  "projectName": "Learning Tracker",
+  "version": 1,
+  "active": true,
+  "owner": {
+    "name": "Mohamed",
+    "email": "mohamed@example.com"
+  },
+  "tags": ["java", "spring", "json"],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Learn JSON basics",
+      "done": true,
+      "estimateHours": 2.5
+    },
+    {
+      "id": 2,
+      "title": "Write a JSON schema",
+      "done": false,
+      "estimateHours": 3
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MyProject",
+  "type": "object",
+  "required": ["projectName", "version", "owner", "tasks"],
+  "properties": {
+    "projectName": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "active": { "type": "boolean" },
+    "owner": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "done"],
+        "properties": {
+          "id": { "type": "integer" },
+          "title": { "type": "string" },
+          "done": { "type": "boolean" },
+          "estimateHours": { "type": "number", "minimum": 0 }
+        }
+      }
+    }
+  }
+}
