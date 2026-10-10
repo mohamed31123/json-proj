@@ -17,11 +17,12 @@ The project uses sample e-commerce orders to demonstrate common data-quality pro
 
 ```text
 json-data-cleaning/
+├── .vscode/
+│   ├──    setting.json          # Original sample data
+│   
 ├── data/
 │   ├── data.json              # Original sample data
-│   └── data-cleaned.json      # Generated cleaned output
-├── scripts/
-│   └── clean-data.ps1         # PowerShell cleaning script
+│   └── data-cleaned.json      # Generated cleaned output         
 └── README.md
 ```
 
@@ -182,7 +183,7 @@ By completing this project, you will practice:
 
 Contributions and suggestions are welcome. Please describe the data-quality issue and the rule used to fix it. Avoid committing real customer information or other sensitive data.
 
-## License
+## Master
 
 Choose a license before sharing or reusing this project publicly. For example, an MIT license can be added by creating a `LICENSE` file.
 
